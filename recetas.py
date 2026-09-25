@@ -1,9 +1,26 @@
+from recetas import receta_pasta
+# AQui se itan importando mas recetas a medida que se agreguen
+
+def mostrar_menu():
+	print("recetario disponible:")
+	print("1. Pasta al ajo")
+	#Agrega aqui tu receta con un numero nuevo
+
+	opcion = input("Elige una receta (numero): ")
+	
+	if opcion == "1":
+		receta_pasta()
+	else:
+		print("Opcion no valida. Intenta de nuevo")
+
+if __name__ == "__main__":
+	mostrar_menu()
 
 ---
 
 ### recetas.py
 
-# Aquí van las recetas de todos los participantes
+# Aqui van las recetas de todos los participantes
 
 def receta_pasta():
     print(" Receta: Pasta al ajo")
